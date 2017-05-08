@@ -1,5 +1,27 @@
 # -*-coding:Utf-8 -*
 
+##########
+# Autres #
+##########
+
+a = 10
+b = 3
+c = a // b # // : partie entière de la division : 3
+
+#################
+# Documentation #
+#################
+
+import math
+print(math.__doc__) # Afficher la documentation du module math
+help(str) # Console : afficher la documentation du module str (string)
+
+##############
+# Constantes #
+##############
+
+MA_CONSTANTE = 16
+
 ############################
 # Permutter deux variables #
 ############################
@@ -32,10 +54,14 @@ elif nombre < 0:
 else: # if a == 0
     print("a est nul")
 
-###########################################################################
-# Mettre en pause notre programme(ou bien os.system("pause") sur Windows) #
-###########################################################################
+###################################
+# Mettre en pause notre programme #
+###################################
 
+# Sous Windows
+import os
+os.system("pause")
+# Sous Linux
 input("Appuyez sur ENTREE pour continuer...")
 
 ################################
@@ -245,4 +271,27 @@ while 1: # 1 est toujours vrai -> boucle infinie
     lettre = input("Tapez 'Q' pour quitter : ")
     if lettre == "Q":
         print("Fin de la boucle")
- 
+
+################
+ # Les modules #
+################
+
+# Importer un module
+import random
+
+# Importer une fonction particulière d'un module
+from math import sin
+
+# Tester si un module est appelé directement, ou depuis un autre fichier
+if __name__ == "__main__:
+    print("TEST")
+
+################
+# Les packages #
+################
+
+# Importer un module d'un package
+from package import module
+
+# Importer une fonction particulière d'un module, lui meme appartenant à un package
+from package.module import fonction
