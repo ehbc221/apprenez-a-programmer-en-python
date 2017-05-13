@@ -92,7 +92,7 @@ for cle, valeur in fruits.items():
 # Les dictionnaires et paramètres de fonction #
 ###############################################
 
-# Récupérer les paramètres nommés dans un dictionnaire>>> def fonction_inconnue(**parametres_nommes):
+# Récupérer les paramètres nommés dans un dictionnaire : def fonction_inconnue(**parametres_nommes):
 def fonction_inconnue(**parametres_nommes):
     """Fonction permettant de voir comment récupérer les paramètres nommés
     dans un dictionnaire"""
