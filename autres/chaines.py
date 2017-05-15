@@ -5,6 +5,8 @@
 ##########
 
 "a" * 3 # "aaa"
+# en plaçant un r avant le délimiteur qui ouvre notre chaîne, tous les caractères anti-slash qu'elle contient sont échappés
+r'\n' # '\\n'
 
 ###############################################
 # Les chaines de caractère: la méthode format #

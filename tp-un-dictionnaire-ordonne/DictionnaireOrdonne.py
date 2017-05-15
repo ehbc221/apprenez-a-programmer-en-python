@@ -1,3 +1,5 @@
+# -*-coding:Utf-8 -*
+
 class DictionnaireOrdonne:
     """Notre dictionnaire ordonné. L'ordre des données est maintenu
     et il peut donc, contrairement aux dictionnaires usuels, être trié
