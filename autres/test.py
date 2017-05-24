@@ -295,3 +295,16 @@ from package import module
 
 # Importer une fonction particulière d'un module, lui meme appartenant à un package
 from package.module import fonction
+
+#############################################
+# Savoir dans que os est-ce qu'on se trouve #
+#############################################
+
+from sys import platform as _platform
+
+if _platform == "linux" or _platform == "linux2":
+   # linux
+elif _platform == "darwin":
+   # MAC OS X
+elif _platform == "win32":
+   # Windows
